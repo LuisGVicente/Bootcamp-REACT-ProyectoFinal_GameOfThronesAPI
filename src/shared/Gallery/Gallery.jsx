@@ -17,7 +17,7 @@ export default function Gallery(props) {
                 {props.items && props.items.map((item,index) =>
                 <div className="col-lg-2" key={index}>
                     {/* {item.actor === undefined ? <Link to={"/houses/"+item.name}> : <Link to={"/characters/"+item.name}> } */}
-                    <Link to={"/characters/"+item.name} >
+                    <Link to={"/houses/"+item.name} >
                         <figure>
                             {item.image? <img src={item.image} alt={item.name}/> : <img src={item.logoURL} alt={item.name}/>}
                             {props.items? <figcaption>{item.name} from {item.house}</figcaption> : <figcaption>{item.name}</figcaption>}

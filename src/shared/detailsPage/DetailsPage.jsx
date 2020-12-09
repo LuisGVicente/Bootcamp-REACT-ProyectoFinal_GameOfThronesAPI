@@ -16,21 +16,19 @@ export default function DetailsPage (props){
 
     const[house, setDataHouse] = useState({});
 
-
+    
     useEffect(() => {
-        axios.get('https://api.got.show/api/show/characters/'+detailsName).then(res => {
-            setDataCharacter(res.data)
-        })
-    }, []);
-
-
-    useEffect(() => {
-        axios.get('https://api.got.show/api/show/houses/'+detailsName).then(res => {
-            setDataHouse(res.data[0])
-        })
+        if(props.page === 'character'){
+            axios.get('https://api.got.show/api/show/characters/'+detailsName).then(res => {
+                setDataCharacter(res.data)
+            })
+        }else{
+            axios.get('https://api.got.show/api/show/houses/'+detailsName).then(res => {
+                setDataCharacter(res.data[0])
+            })
+        }
     }, []);
     
-    console.log(house)
     return (
 
         <div className="">
@@ -40,7 +38,7 @@ export default function DetailsPage (props){
             <div className="row">
                 <div className="col-12 col-sm-6 col-lg-2">
                     {props.page === 'character' ? <h3>Casa</h3> : <h3>Lema</h3>}
-                    {props.page === 'character' ? <img src={house.logoURL} alt={house.house} /> : <p>{house.words}</p>}
+                    {props.page === 'character' ? <img src={house.logoURL} alt={house.name} /> : <p>{house.words}</p>}
                     
                 </div>
                 <div className="col-12 col-sm-6 col-lg-2">
