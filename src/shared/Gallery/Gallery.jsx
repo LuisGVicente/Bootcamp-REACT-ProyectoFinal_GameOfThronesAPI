@@ -9,13 +9,11 @@ export default function Gallery(props) {
     
 
     return (
-
-        
-        <div className="container">
+        <div className="container-fluid">
         <SimpleBar style={{ maxHeight: 600 }}>
             <div className="row">
                 {props.items && props.items.map((item,index) =>
-                <div className="col-lg-2" key={index}>
+                <div className="col-12 col-sm-4 col-lg-2" key={index}>
                     {/* {item.actor === undefined ? <Link to={"/houses/"+item.name}> : <Link to={"/characters/"+item.name}> } */}
                     <Link to={"/houses/"+item.name} >
                         <figure>

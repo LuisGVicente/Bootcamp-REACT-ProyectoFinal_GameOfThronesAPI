@@ -22,12 +22,10 @@ export default function GalleryPage(props) {
     }, []);
 
     return (
-            <>
-            
+        <div>
             <Traductor></Traductor>
             {props.item === 'characters' ? <Gallery items={characters}></Gallery> : <Gallery items={houses}></Gallery>}
             <Menu></Menu>
-            
-            </>
+        </div>
     )
 }

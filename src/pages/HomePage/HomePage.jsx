@@ -7,11 +7,13 @@ import './HomePage.scss';
 export default function Homepage(props) {
     return (
         <div className="c-home">
-            <div>
-                <img src="../../assets/img/image 1@2x.png" alt="got"/>
+            <div className="c-home__bg">
+                <h1 className="c-home__title">Games of Thrones</h1>
             </div>
             <Traductor></Traductor>
-            <Menu></Menu>
+            <div className="c-home__menu">
+                <Menu></Menu>
+            </div>
         </div>
     )
 }
