@@ -2,6 +2,7 @@ import React from 'react'
 
 
 export default function PortadaPage(props){
+    console.log(props.values.name);
     return (
         <div>
             <figure>

@@ -9,7 +9,7 @@ export default function Menu(props) {
             <div className="row">
                 <Link className="col-lg-4" to="/characters">Personajes</Link>
                 <Link className="col-lg-4" to="/houses">Casas</Link>
-                <Link className="col-lg-4">Cronología</Link>
+                <Link className="col-lg-4" to="/chronologies">Cronología</Link>
             </div>
         </div>
     )

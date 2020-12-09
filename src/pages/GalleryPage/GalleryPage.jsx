@@ -18,7 +18,6 @@ export default function GalleryPage(props) {
     useEffect(() => {
         axios.get('https://api.got.show/api/show/houses/').then(res => {
             setHouses(res.data);
-            console.log(res.data);
         })
     }, []);
 
