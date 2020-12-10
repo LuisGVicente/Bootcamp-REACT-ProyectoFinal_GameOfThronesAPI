@@ -29,14 +29,17 @@ export default function DetailsPage (props){
                 setDataHouse(res.data[0])
             })
         }
-    }, []);
+    },[]);
+
+
+    const history = useHistory();
 
 
     
     return (
 
         <div className="container">
-            <button onClick={useHistory().goBack}>Volver</button>
+            <button onClick={() => {history.push(props.page === 'character' ? '/characters' : '/houses')}}>Volver</button>
             <figure className="c-detail__figure">
                 <img src={character.image} alt={character.name} />
                 <figcaption>{character.name}</figcaption>
