@@ -3,16 +3,18 @@ import Menu from '../../core/menu/Menu'
 import Traductor from '../../shared/Traductor/Traductor'
 import './HomePage.scss';
 
-export default function Homepage(props) {
-    
+import './HomePage.scss';
 
+export default function Homepage(props) {
     return (
-        <>
-            <div className="home">
-                <Traductor></Traductor>
-                <div>GAME OF THRONES</div>
+        <div className="c-home">
+            <Traductor></Traductor>
+            <div className="c-home__bg">
+                <h1 className="c-home__title">Games of Thrones</h1>
+            </div>
+            <div className="container">
                 <Menu></Menu>
             </div>
-        </>
+        </div>
     )
 }

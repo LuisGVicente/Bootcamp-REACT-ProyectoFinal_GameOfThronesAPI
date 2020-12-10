@@ -1,0 +1,15 @@
+.c-detail{
+
+    &__figure{
+        text-align: center;
+    }
+
+    &__info{
+        text-align: center;
+        border: solid 1px;
+
+        &--text{
+            font-size: 0.6em;
+        }
+    }
+}

@@ -1,14 +1,12 @@
 import React from 'react';
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
-import './Gallery.scss';
 
 
 export default function Gallery(props) {
     
 
     return (
-
         
         <div className="container ">
         <SimpleBar style={{ maxHeight: 400 }}>
@@ -20,9 +18,9 @@ export default function Gallery(props) {
                 {props.items? <figcaption>{item.name} from {item.house}</figcaption> : <figcaption>{item.name}</figcaption>}
                 </figure>
                 </div>
-            )}
+                )}
             </div>
-            </SimpleBar>
+        </SimpleBar>
         </div>
     )
 }
