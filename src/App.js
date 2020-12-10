@@ -1,7 +1,8 @@
 import './App.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Homepage from './pages/HomePage/HomePage';
-import GalleryPage from './pages/GalleryPage/GalleryPage';
+import HousesPage from './pages/HousesPage/HousesPage';
+import CharactersPage from './pages/CharactersPage/CharactersPage';
 // import {useTranslation} from 'react-i18next';
 
 function App() {
@@ -16,11 +17,11 @@ function App() {
       <Switch>
 
             <Route path="/houses">
-                <GalleryPage  item="houses"></GalleryPage>
+                <HousesPage></HousesPage>
             </Route>
 
             <Route path="/characters">
-                <GalleryPage className="lds-ring" item="characters"></GalleryPage>
+                <CharactersPage></CharactersPage>
             </Route>
 
             <Route path="/">
