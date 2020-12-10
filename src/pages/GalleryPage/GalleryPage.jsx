@@ -3,6 +3,8 @@ import axios from 'axios';
 import Gallery from '../../shared/Gallery/Gallery';
 import Menu from '../../core/menu/Menu';
 import Traductor from '../../shared/Traductor/Traductor';
+import SimpleBar from 'simplebar-react';
+import 'simplebar/dist/simplebar.min.css';
 
 export default function GalleryPage(props) {
 
@@ -24,8 +26,12 @@ export default function GalleryPage(props) {
     return (
         <div>
             <Traductor></Traductor>
-            {props.item === 'characters' ? <Gallery items={characters}></Gallery> : <Gallery items={houses}></Gallery>}
-            <Menu></Menu>
+            <SimpleBar style={{ maxHeight: 600 }}>
+                {props.item === 'characters' ? <Gallery items={characters}></Gallery> : <Gallery items={houses}></Gallery>}
+           </SimpleBar>
+            <div className="container">
+                <Menu></Menu>
+            </div>
         </div>
     )
 }

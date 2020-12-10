@@ -1,6 +1,7 @@
 .c-home{
     width: 100%;
     height: 100%;
+
     &__bg{
         background-image: url('../../assets/img/image\ 1@2x.png');
         background-size: cover;
@@ -11,12 +12,12 @@
         color: #ffffff;
     }
 
-    &__menu{
-        position: fixed;
-        bottom: 0;
-        border:solid;
-        width: 100%;
-        text-align: center;
-    }
+    // &__menu{
+    //     position: fixed;
+    //     bottom: 0;
+    //     border:solid;
+    //     width: 100%;
+    //     text-align: center;
+    // }
    
 }
