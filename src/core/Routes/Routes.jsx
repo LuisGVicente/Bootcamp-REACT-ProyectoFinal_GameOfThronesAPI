@@ -1,9 +1,11 @@
 import React from 'react'
 import {Switch, Route} from "react-router-dom";
-import CharactersPage from '../../pages/CharactersPage/CharactersPage';
+// import CharactersPage from '../../pages/CharactersPage/CharactersPage';
+import GalleryPage from '../../pages/GalleryPage/GalleryPage';
 import Homepage from '../../pages/HomePage/HomePage';
-import HousesPage from '../../pages/HousesPage/HousesPage';
+// import HousesPage from '../../pages/HousesPage/HousesPage';
 import DetailsPage from '../../shared/DetailsPage/DetailsPage';
+// import Gallery from '../../shared/Gallery/Gallery';
 
 export default function Routes(){
     return(
@@ -13,7 +15,7 @@ export default function Routes(){
             </Route>
 
             <Route path="/houses">
-              <HousesPage></HousesPage>
+              <GalleryPage item='houses'></GalleryPage>
             </Route>
 
             <Route path="/characters/:detailsName">
@@ -21,7 +23,7 @@ export default function Routes(){
             </Route>
 
             <Route path="/characters">
-              <CharactersPage></CharactersPage>
+              <GalleryPage item='characters'></GalleryPage>
             </Route>
 
             <Route path="/">
