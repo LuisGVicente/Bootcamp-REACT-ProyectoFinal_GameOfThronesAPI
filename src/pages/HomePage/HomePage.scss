@@ -1,3 +1,23 @@
-.home {
-    background-image: url('https://www.google.es/imgres?imgurl=https%3A%2F%2Ffansided.com%2Ffiles%2F2019%2F02%2Firon-throne.jpg&imgrefurl=https%3A%2F%2Ffansided.com%2F2019%2F04%2F05%2Fgame-of-thrones-symbology-iron-throne-meaning%2F&tbnid=Py33wsmoZORkoM&vet=12ahUKEwjNhsqy_sDtAhUE8hoKHcKhClQQMygCegUIARCiAQ..i&docid=LlzWoo5TjSz6gM&w=1920&h=1200&q=game%20of%20thrones%20chair&hl=es&ved=2ahUKEwjNhsqy_sDtAhUE8hoKHcKhClQQMygCegUIARCiAQ')
+.c-home{
+    width: 100%;
+    height: 100%;
+
+    &__bg{
+        background-image: url('../../assets/img/image\ 1@2x.png');
+        background-size: cover;
+    }
+
+    &__title{
+        text-align: center;
+        color: #ffffff;
+    }
+
+    // &__menu{
+    //     position: fixed;
+    //     bottom: 0;
+    //     border:solid;
+    //     width: 100%;
+    //     text-align: center;
+    // }
+   
 }

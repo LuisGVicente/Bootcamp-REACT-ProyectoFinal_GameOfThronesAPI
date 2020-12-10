@@ -8,11 +8,14 @@ import Buscador from '../../shared/Buscador/Buscador';
 let allCharacters = [];
 let allHouses = [];
 
+let allCharacters = [];
+let allHouses = [];
+
 export default function GalleryPage(props) {
 
     const [characters, setCharacters] = useState([]);
     const [houses, setHouses] = useState([]);
-
+    
     useEffect(() => {
         axios.get('https://api.got.show/api/show/characters/').then(res => {
             setCharacters(res.data);

@@ -1,15 +1,11 @@
 @import './styles/imports/settings.imports';
-body {
-  margin: 0;
-  // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  //   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  //   sans-serif;
-  font-family: gameOfThrones;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+// @import './styles/imports/tools.imports';
+@import './styles/imports/generic.imports';
+@import './styles/imports/elements.imports';
+@import './styles/imports/blocks.imports';
+@import './styles/imports/utilities.imports';
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+// code {
+//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+//     monospace;
+// }
