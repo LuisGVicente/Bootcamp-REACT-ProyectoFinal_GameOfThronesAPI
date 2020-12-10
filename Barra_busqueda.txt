@@ -1,0 +1,6 @@
+1. Instalar npm install --save downshift
+2.import {useCombobox} from 'downshift';
+3. Creamos 3 estados:
+    const [inputItems, setInputItems] = useState([]);
+    const [users, setUsers] =useState([]);
+    const [single, setSingleUser] =useState('');

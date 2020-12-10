@@ -16,11 +16,11 @@ function App() {
       <Switch>
 
             <Route path="/houses">
-                <GalleryPage item="houses"></GalleryPage>
+                <GalleryPage  item="houses"></GalleryPage>
             </Route>
 
             <Route path="/characters">
-                <GalleryPage item="characters"></GalleryPage>
+                <GalleryPage className="lds-ring" item="characters"></GalleryPage>
             </Route>
 
             <Route path="/">
