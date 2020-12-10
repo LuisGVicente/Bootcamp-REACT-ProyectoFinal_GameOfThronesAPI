@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-import './Gallery.scss';
+import { Link } from 'react-router-dom';
 
 
 export default function Gallery(props) {
