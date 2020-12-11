@@ -26,8 +26,6 @@ export default function CharactersPage() {
         })
     },[]);
 
-
-
     const fnFilterItems = (filterValues) => {
         const filteredChas = allCharacters.filter((cha) =>  cha.name.toLowerCase().includes(filterValues.name.toLowerCase() || filterValues.house.toLowerCase()));
         setCharacters(filteredChas);

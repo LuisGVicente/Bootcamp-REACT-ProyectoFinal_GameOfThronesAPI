@@ -6,10 +6,12 @@ import Loading from '../../core/Loading/Loading';
 import axios from 'axios';
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
+import {useTranslation} from "react-i18next";
 
 
 export default function ChronoPage(props) {
     
+    const {t, i18n} = useTranslation();
     const [characters, setCharacters] = useState([]);
     const [order, setOrder] = useState(true);
 
@@ -45,27 +47,30 @@ export default function ChronoPage(props) {
 
 
     return (
-        <>
-            <Traductor></Traductor>
-            <button onClick={() => setOrder(!order)}>Ordenar</button>
-            <div className="container ">
-        <SimpleBar style={{ maxHeight: 400 }}>
-        <div >
-            {characters.map((item,index) => 
-            <div className="col-lg-4" key={index}>
-            {item.age ? <p>{item.age.age}</p> : <p>?</p>}
-            <figcaption>{item.name}</figcaption>
-                <figure  >
-                    {item.image? <img src={item.image} alt={item.name}/> :
-                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStx4gMG-ooM9ta3v_6RJV-U30GEQsQSV4TUw&usqp=CAU" alt=""/>}
-                    
-                </figure>
-                </div>
-                )}
+        
+        <div className="c-charPage">
+            <div className="c-charPage__header">
+                <Traductor></Traductor>
+                <button className="c-detail__button" onClick={() => setOrder(!order)}>{t('GOT.order')}</button>
             </div>
-        </SimpleBar>
+                <div className="container">
+            <SimpleBar style={{ maxHeight: 400 }}>
+            <div >
+                {characters.map((item,index) => 
+                <div className="col-lg-4" key={index}>
+                {item.age ? <p>{item.age.age}</p> : <p>?</p>}
+                <figcaption>{item.name}</figcaption>
+                    <figure  >
+                        {item.image? <img src={item.image} alt={item.name}/> :
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStx4gMG-ooM9ta3v_6RJV-U30GEQsQSV4TUw&usqp=CAU" alt=""/>}
+                        
+                    </figure>
+                    </div>
+                    )}
+                </div>
+            </SimpleBar>
+            </div>
+                <Menu></Menu>
         </div>
-            <Menu></Menu>
-        </>
     )
 }

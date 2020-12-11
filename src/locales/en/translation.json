@@ -20,7 +20,8 @@
         "titles": "titles",
         "establishment": "Establishment",
         "regions": "regions",
-        "search": "Search"
+        "search": "Search",
+        "order": "Sort"
     }
         
 }

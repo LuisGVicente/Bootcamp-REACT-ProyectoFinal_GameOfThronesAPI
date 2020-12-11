@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
 import Traductor from '../../shared/Traductor/Traductor';
-
-
 import './DetailsPage.scss';
-
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
 import { useHistory, useParams } from 'react-router-dom';
 import {useTranslation} from "react-i18next";
-import Traductor from '../Traductor/Traductor';
+
+
 
 export default function DetailsPage (props){
 

@@ -11,10 +11,11 @@
         "appearances": "Apariciones",
         "father": "Padre",
         "siblings": "Descendientes",
-        "titles": "Títulos",
+        "titles": "Titulos",
         "establishment": "Fundacion",
         "regions": "Regiones",
-        "search": "Buscar"
+        "search": "Buscar",
+        "order": "Ordenar"
     }
         
 }

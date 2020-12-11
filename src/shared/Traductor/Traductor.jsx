@@ -20,7 +20,7 @@ export default function Traductor(props) {
             </div>
 
             <div className="c-traductor__link">
-            <button onClick={() => handleClick('es')}>
+            <button className="c-detail__button" onClick={() => handleClick('es')}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
                     <path fill="#C8414B" d="M0 48.172a4.793 4.793 0 0 0 4.793 4.794h54.414A4.793 4.793 0 0 0 64 48.172v-4.034H0v4.034zM59.207 11.034H4.793A4.793 4.793 0 0 0 0 15.828v4.034h64v-4.034a4.793 4.793 0 0 0-4.793-4.793z"/>
                     <path fill="#FFD250" d="M64 19.863H0v24.276h64V19.862z"/>
@@ -57,7 +57,7 @@ export default function Traductor(props) {
             </div>
 
             <div className="c-traductor__link">
-            <button onClick={() => handleClick('en')}>
+            <button className="c-detail__button" onClick={() => handleClick('en')}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
                     <path fill="#41479B" d="M59.207 11.034H4.793A4.793 4.793 0 0 0 0 15.828v32.344a4.793 4.793 0 0 0 4.793 4.794h54.414A4.793 4.793 0 0 0 64 48.172V15.828a4.793 4.793 0 0 0-4.793-4.793z"/>
                     <path fill="#F5F5F5" d="M63.934 15.035c-.378-2.27-2.35-4-4.727-4H57.96L37.517 24.427V11.034H26.483v13.394L6.04 11.034H4.793a4.794 4.794 0 0 0-4.727 4.001L17.54 26.483H0v11.034h17.539L.066 48.965c.378 2.27 2.35 4 4.727 4H6.04l20.443-13.393v13.393h11.034V39.572L57.96 52.965h1.247a4.794 4.794 0 0 0 4.727-4L46.46 37.517H64V26.483H46.461l17.473-11.448z"/>
