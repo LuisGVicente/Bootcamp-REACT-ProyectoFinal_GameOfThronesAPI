@@ -18,7 +18,7 @@ export default function Gallery(props) {
                 <figure  >
                     {item.image? <Link to={"characters/"+item.name}><img src={item.image} alt=""/></Link> :
                      item.logoURL ? <Link to={"/houses/"+item.name}><img src={item.logoURL} alt=""/></Link> : <Link to={"/houses/"+item.name}><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStx4gMG-ooM9ta3v_6RJV-U30GEQsQSV4TUw&usqp=CAU" alt=""/></Link>}
-                {props.items? <figcaption>{item.name} from {item.house}</figcaption> : <figcaption>{item.name}</figcaption>}
+                {props.items? <figcaption>{item.name}</figcaption> : <figcaption>{item.name}</figcaption>}
                 </figure>
                 </div>
                 )}
