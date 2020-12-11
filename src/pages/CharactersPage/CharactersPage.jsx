@@ -35,7 +35,7 @@ export default function CharactersPage() {
 
     return (
         <div className="c-charPage">
-            <div className="container">
+            <div className="c-charPage__header">
                 <Buscador fnFilterItems={fnFilterItems}></Buscador>
                 <Traductor></Traductor>
             </div>

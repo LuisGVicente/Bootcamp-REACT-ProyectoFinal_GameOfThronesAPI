@@ -1,8 +1,9 @@
+@import '../../styles/settings/colors.settings';
+
 .c-detail{
 
-    background-color: black;
-    // background-color: $bg-primary;
-    color: #FFF;
+    background-color: $bg-primary;
+    color: $text-primary;
     height: 100vh;
     text-align: center;
 
@@ -14,10 +15,8 @@
 
     &__button{
         margin-left: 10px;
-        // background-color: $bg-primary;
-        background-color: black;
-        // color: $text-primary;
-        color: #FFF;
+        background-color: $bg-primary;
+        color: $text-primary;
         font-size: .9em;
         border: 0;
         cursor: pointer;

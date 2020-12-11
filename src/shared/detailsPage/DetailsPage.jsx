@@ -72,7 +72,7 @@ export default function DetailsPage (props){
                 <div className="col-12 col-sm-6 col-lg-2">
                     <div className="c-detail__info">
                         {props.page === 'character' ? <h3>Apariciones</h3> : <h3>Region</h3> }
-                        <SimpleBar style={{ maxHeight: 200 }}>
+                        <SimpleBar style={{ maxHeight: 150 }}>
                             {props.page === 'character' ? <p className="c-detail__info--text">{character.appearances}</p> : <p className="c-detail__info--text">{house.region}</p>}
                         </SimpleBar>
                     </div>
@@ -92,7 +92,7 @@ export default function DetailsPage (props){
                 <div className="col-12 col-sm-6 col-lg-2">
                     <div className="c-detail__info">
                         {props.page === 'character' ? <h3>Titulos</h3> : <h3>Fundacion</h3> }
-                        <SimpleBar style={{ maxHeight: 200 }}>
+                        <SimpleBar style={{ maxHeight: 150 }}>
                             {props.page === 'character' ? <p className="c-detail__info--text">{character.titles}</p> : <p className="c-detail__info--text">Poner la fecha parametro .createAt</p> }
                         </SimpleBar>
                     </div>

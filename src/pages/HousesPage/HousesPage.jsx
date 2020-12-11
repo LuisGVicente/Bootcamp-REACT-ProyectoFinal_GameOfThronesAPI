@@ -35,7 +35,7 @@ export default function HousesPage() {
 
     return (
         <div className="c-housePage">
-            <div>
+            <div className="c-housePage__header">
                 <Buscador fnFilterItems={filterItems}></Buscador>
                 <Traductor></Traductor>
             </div>
