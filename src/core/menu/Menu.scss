@@ -19,7 +19,10 @@
     &__link{
         text-decoration: none;
         color: $text-primary;
-        
         padding: 3px;
+
+        &--active{
+            text-decoration: underline;
+        }
     }
 }
