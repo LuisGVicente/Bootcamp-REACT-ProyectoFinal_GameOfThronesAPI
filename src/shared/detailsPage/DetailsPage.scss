@@ -1,15 +1,62 @@
 .c-detail{
 
+    background-color: black;
+    // background-color: $bg-primary;
+    color: #FFF;
+    height: 100vh;
+    text-align: center;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__button{
+        margin-left: 10px;
+        // background-color: $bg-primary;
+        background-color: black;
+        // color: $text-primary;
+        color: #FFF;
+        font-size: .9em;
+        border: 0;
+        cursor: pointer;
+        
+    }
+
+    &__button::before{
+       content: '<<<<< ';
+    }
+
+    &__head{
+        margin-bottom: 50px;
+    }
+
+    
+    
     &__figure{
-        text-align: center;
+        margin: 0 auto;
+        width: 248px;
+        height: 320px;
+        
+        &--text{
+            margin-top: 10px;
+            font-size: 1.4em;
+        }
     }
 
     &__info{
-        text-align: center;
-        border: solid 1px;
+        margin: 0;
+        width: 248px;
+        height: 231px;
 
         &--text{
             font-size: 0.6em;
+        }
+
+        &--img{
+            width: 160px;
+            height: 191.6px;
         }
     }
 }
