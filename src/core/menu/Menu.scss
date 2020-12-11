@@ -1,3 +1,6 @@
+@import '../../styles/settings/colors.settings';
+
+
 .c-menu{
     width: 100%;
     position: fixed;
@@ -15,8 +18,8 @@
 
     &__link{
         text-decoration: none;
-        // color: $text-primary;
-        color: #FFF;
+        color: $text-primary;
+        
         padding: 3px;
     }
 }

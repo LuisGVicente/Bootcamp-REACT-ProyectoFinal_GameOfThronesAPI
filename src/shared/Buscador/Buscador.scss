@@ -1,15 +1,16 @@
-.c-buscador{
-    display: inline-block;
+@import '../../styles/settings/colors.settings';
 
+.c-buscador{
+    
     &__input{
-        border-bottom: solid 1px white;
-        color: white;
-        background-color: black;
+        border: 0;
+        border-bottom: solid 1px $text-primary;
+        color: $text-primary;
+        background-color: $bg-primary;
         width: 300px;
         height: 50px;
-        font-size: 10pt;
-        color: #FFF;
+        font-size: 10px;
+        padding: 0;
         padding-left: 45px;
-        border-radius: none;
     }
 }

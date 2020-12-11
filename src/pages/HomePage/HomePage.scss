@@ -1,3 +1,6 @@
+@import '../../styles/settings/colors.settings';
+
+
 .c-home{
     background-image: url(../../assets/img/bg_got.png);
     height: 100vh;
@@ -6,7 +9,7 @@
     &__title{
         text-align: center;
         font-size: 8em;
-        color: #ffffff;
+        color: $text-primary;
     }
    
 }
