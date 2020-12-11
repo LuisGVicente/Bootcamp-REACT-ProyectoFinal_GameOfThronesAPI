@@ -20,6 +20,8 @@ export default function DetailsPage (props){
 
     const[house, setDataHouse] = useState({});
 
+    const [dateCreate, setDataDateCreate] = useState();
+
     
     useEffect(() => {
         if(props.page === 'character'){
@@ -33,6 +35,8 @@ export default function DetailsPage (props){
         }else{
             axios.get('https://api.got.show/api/show/houses/'+detailsName).then(res => {
                 setDataHouse(res.data[0])
+                setDataDateCreate(res.data[0].createdAt);
+                
             })
         }
     },[]);
@@ -51,8 +55,9 @@ export default function DetailsPage (props){
             </div>
             <div className="c-detail__head">
                 <figure className="c-detail__figure">
-                    <img src={character.image} alt={character.name} />
-                    <figcaption className="c-detail__figure--text">{character.name}</figcaption>
+                    {props.page === 'character' ? <img src={character.image} alt={character.name} /> : <img src={house.logoURL ? house.logoURL : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStx4gMG-ooM9ta3v_6RJV-U30GEQsQSV4TUw&usqp=CAU"} alt={house.name} />}
+                    {props.page === 'character' ? <figcaption className="c-detail__figure--text">{character.name}</figcaption> : <figcaption className="c-detail__figure--text">{house.name}</figcaption>}
+                    
                 </figure> 
             </div>
             <div className="container-fluid">
@@ -93,7 +98,7 @@ export default function DetailsPage (props){
                     <div className="c-detail__info">
                         {props.page === 'character' ? <h3>Titulos</h3> : <h3>Fundacion</h3> }
                         <SimpleBar style={{ maxHeight: 150 }}>
-                            {props.page === 'character' ? <p className="c-detail__info--text">{character.titles}</p> : <p className="c-detail__info--text">Poner la fecha parametro .createAt</p> }
+                            {props.page === 'character' ? <p className="c-detail__info--text">{character.titles}</p> : <p className="c-detail__info--text">{dateCreate}</p> }
                         </SimpleBar>
                     </div>
                 </div>
