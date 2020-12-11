@@ -8,13 +8,11 @@ import './HomePage.scss';
 export default function Homepage(props) {
     return (
         <div className="c-home">
-            <Traductor></Traductor>
+            <Traductor page="home"></Traductor>
             <div className="c-home__bg">
                 <h1 className="c-home__title">Games of Thrones</h1>
             </div>
-            <div className="container">
-                <Menu></Menu>
-            </div>
+            <Menu></Menu>
         </div>
     )
 }

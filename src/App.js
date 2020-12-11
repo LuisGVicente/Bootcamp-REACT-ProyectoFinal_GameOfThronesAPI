@@ -13,7 +13,7 @@ function App() {
   return (
         <Router>
           <LoadingContext.Provider value={{isLoading, setIsLoading}}>
-          <Routes></Routes>
+            <Routes></Routes>
           </LoadingContext.Provider>
         </Router>
   );

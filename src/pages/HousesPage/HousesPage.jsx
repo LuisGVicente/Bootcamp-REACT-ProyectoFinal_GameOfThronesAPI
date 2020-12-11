@@ -7,6 +7,8 @@ import Buscador from '../../shared/Buscador/Buscador';
 import LoadingContext from '../../shared/contexts/LoadingContext';
 import Loading from '../../core/Loading/Loading';
 
+import './HousesPage.scss';
+
 let allHouses = [];
 
 export default function HousesPage() {
@@ -32,13 +34,17 @@ export default function HousesPage() {
     }    
 
     return (
-            <>
-            <Buscador fnFilterItems={filterItems}></Buscador>
-            <Traductor></Traductor>
+        <div className="c-housePage">
+            <div>
+                <Buscador fnFilterItems={filterItems}></Buscador>
+                <Traductor></Traductor>
+            </div>
             <Loading></Loading>
-            <Gallery items={houses}></Gallery>
+            <div className="container">
+                <Gallery items={houses}></Gallery>
+            </div>
             <Menu></Menu>
-            </>
+        </div>
             
             
     )
