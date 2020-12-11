@@ -11,7 +11,7 @@ export default function Routes(){
     return(
         <Switch>
 
-            <Route path="/chronologies">
+            <Route path="/chronology">
               <ChronoPage></ChronoPage>
             </Route>
 

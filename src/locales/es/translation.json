@@ -1,15 +1,9 @@
 {
-    "Thanks": {
-        "1": "Gracias"
-    },
-    "Why": {
-        "1": "Por ver este video"
-    },
     "GOT": {
         "title": "Juego de Tronos",
         "characters": "Personajes",
         "houses": "Casas",
-        "chronology": "Cronología",
+        "chronology": "Cronologia",
         "back": "Volver",
         "words": "Lema",
         "allegiances": "Alianzas",
@@ -18,7 +12,7 @@
         "father": "Padre",
         "siblings": "Descendientes",
         "titles": "Títulos",
-        "establishment": "Fundación",
+        "establishment": "Fundacion",
         "regions": "Regiones",
         "search": "Buscar"
     }
