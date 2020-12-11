@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import './Traductor.scss'
 
 export default function Traductor(props) {
     const { t, i18n } = useTranslation();
@@ -9,9 +10,8 @@ export default function Traductor(props) {
     }
 
     return (
-        
-        <div>
-            <div>
+        <div className="c-traductor">
+            <div className={props.page === 'home' ? 'c-traductor__home' : 'c-traductor__link'}>
                 <a href="/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="52" height="50" fill="none" viewBox="0 0 52 50">
                     <path fill="#fff" d="M51.127 21.959l-4.393-4.003V4.684a1.53 1.53 0 0 0-1.53-1.53H34.63a1.53 1.53 0 0 0-1.529 1.53v.85L27.796.7a2.654 2.654 0 0 0-3.592 0L.874 21.959a2.65 2.65 0 0 0-.691 2.934 2.65 2.65 0 0 0 2.486 1.703h3.727v21.3c0 .844.684 1.53 1.529 1.53h12.788a1.53 1.53 0 0 0 1.53-1.53V34.963h7.515v12.933c0 .845.684 1.53 1.529 1.53h12.788a1.53 1.53 0 0 0 1.529-1.53v-21.3h3.727a2.65 2.65 0 0 0 2.486-1.703 2.65 2.65 0 0 0-.69-2.934zm-7.053 1.579a1.53 1.53 0 0 0-1.529 1.53v21.299h-9.729V33.434a1.53 1.53 0 0 0-1.529-1.529H20.713a1.53 1.53 0 0 0-1.53 1.53v12.932h-9.73v-21.3a1.53 1.53 0 0 0-1.528-1.53H3.68l22.32-20.336 7.6 6.926a1.53 1.53 0 0 0 2.559-1.13V6.212h7.516V18.63c0 .43.18.84.499 1.13l4.144 3.777h-4.245z"/>
@@ -19,6 +19,7 @@ export default function Traductor(props) {
                 </a>
             </div>
 
+            <div className="c-traductor__link">
             <button onClick={() => handleClick('es')}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
                     <path fill="#C8414B" d="M0 48.172a4.793 4.793 0 0 0 4.793 4.794h54.414A4.793 4.793 0 0 0 64 48.172v-4.034H0v4.034zM59.207 11.034H4.793A4.793 4.793 0 0 0 0 15.828v4.034h64v-4.034a4.793 4.793 0 0 0-4.793-4.793z"/>
@@ -53,7 +54,9 @@ export default function Traductor(props) {
                     <path fill="#C8414B" d="M14.345 32H8.828v1.103h5.517V32zM8.828 36.414l3.31-1.104v-1.103l-3.31 1.103v1.104z"/>
                 </svg>
             </button>
+            </div>
 
+            <div className="c-traductor__link">
             <button onClick={() => handleClick('en')}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
                     <path fill="#41479B" d="M59.207 11.034H4.793A4.793 4.793 0 0 0 0 15.828v32.344a4.793 4.793 0 0 0 4.793 4.794h54.414A4.793 4.793 0 0 0 64 48.172V15.828a4.793 4.793 0 0 0-4.793-4.793z"/>
@@ -61,7 +64,8 @@ export default function Traductor(props) {
                     <path fill="#FF4B55" d="M35.31 11.034h-6.62V28.69H0v6.62h28.69v17.655h6.62V35.31H64v-6.62H35.31V11.035z"/>
                     <path fill="#FF4B55" d="M3.1 52.657l23.322-15.14h-4.053L1.152 51.29a4.799 4.799 0 0 0 1.946 1.367zM43.298 37.517h-4.053l22.59 14.663a4.816 4.816 0 0 0 1.535-1.634L43.298 37.517zM.506 13.684l19.716 12.799h4.054L1.934 11.98c-.6.447-1.09 1.03-1.428 1.704zM41.57 26.483l21.255-13.797a4.802 4.802 0 0 0-1.962-1.358L37.517 26.483h4.054z"/>
                 </svg>
-            </button>   
+            </button>  
+            </div> 
         </div>
 
 

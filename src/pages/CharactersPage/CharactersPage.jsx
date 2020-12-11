@@ -7,6 +7,8 @@ import Buscador from '../../shared/Buscador/Buscador';
 import LoadingContext from '../../shared/contexts/LoadingContext';
 import Loading from '../../core/Loading/Loading';
 
+import './CharactersPage.scss'
+
 let allCharacters = [];
 
 export default function CharactersPage() {
@@ -32,13 +34,17 @@ export default function CharactersPage() {
     }    
 
     return (
-            <>
-            <Buscador fnFilterItems={fnFilterItems}></Buscador>
-            <Traductor></Traductor>
+        <div className="c-charPage">
+            <div className="container">
+                <Buscador fnFilterItems={fnFilterItems}></Buscador>
+                <Traductor></Traductor>
+            </div>
             <Loading></Loading>
-            <Gallery items={characters}></Gallery>
+            <div className="container">
+                <Gallery items={characters}></Gallery>
+            </div>
             <Menu></Menu>
-            </>
+        </div>
             
             
     )

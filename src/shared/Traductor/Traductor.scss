@@ -1,0 +1,12 @@
+.c-traductor{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    &__link{
+        padding-right: 20px;
+    }
+
+    &__home{
+        display: none;
+    }
+}
