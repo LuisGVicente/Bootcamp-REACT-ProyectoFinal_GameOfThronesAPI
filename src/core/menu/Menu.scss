@@ -1,6 +1,28 @@
+@import '../../styles/settings/colors.settings';
+
+
 .c-menu{
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 1.3em;
+
+
+    &__list{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $text-primary;
+        padding: 3px;
+
+        &--active{
+            text-decoration: underline;
+        }
+    }
 }

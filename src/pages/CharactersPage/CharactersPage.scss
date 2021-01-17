@@ -1,0 +1,15 @@
+@import '../../styles/settings/colors.settings';
+
+
+.c-charPage{
+    background-color: $bg-primary;
+    height: 100vh;
+
+
+    &__header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}

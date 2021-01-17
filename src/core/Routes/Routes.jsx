@@ -1,6 +1,7 @@
 import React from 'react'
 import {Switch, Route} from "react-router-dom";
 import CharactersPage from '../../pages/CharactersPage/CharactersPage';
+import ChronoPage from '../../pages/ChronoPage/ChronoPage';
 import Homepage from '../../pages/HomePage/HomePage';
 import HousesPage from '../../pages/HousesPage/HousesPage';
 import DetailsPage from '../../shared/DetailsPage/DetailsPage';
@@ -9,6 +10,11 @@ import DetailsPage from '../../shared/DetailsPage/DetailsPage';
 export default function Routes(){
     return(
         <Switch>
+
+            <Route path="/chronology">
+              <ChronoPage></ChronoPage>
+            </Route>
+
             <Route path="/houses/:detailsName">
               <DetailsPage page="house"></DetailsPage>
             </Route>
